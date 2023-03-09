@@ -1,7 +1,7 @@
-drop database if exists ad;
-create database ad;
+drop database if exists stage;
+create database stage;
 
-use ad;
+use stage;
 
 drop table if exists matches;
 drop table if exists stadiums;
@@ -40,3 +40,14 @@ create table teams
     home_stadium varchar(50),
     primary key (id)
 );
+
+create table managers
+(
+    id int not null,
+    first_name varchar(50) not null,
+    last_name varchar(50) not null,
+    nationality varchar(40) not null,
+    date_of_birth date not null,
+    team varchar(50),
+    primary key (id)
+)
