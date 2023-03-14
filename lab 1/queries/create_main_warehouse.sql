@@ -44,6 +44,7 @@ create table dimManager
     last_name varchar(50),
     nationality varchar(40),
     date_of_birth date,
+    team varchar(40),
     primary key (manager_id)
 );
 
@@ -79,7 +80,8 @@ create table factMatches
     home_team_id int,
     away_team_id int,
     season_id int,
-    manager_id int,
+    home_manager_id int,
+    away_manager_id int,
     stadium_id int,
     home_team_score int,
     away_team_score int,
@@ -90,6 +92,7 @@ create table factMatches
     foreign key(home_team_id) references dimTeams(team_id),
     foreign key(away_team_id) references dimTeams(team_id),
     foreign key(season_id) references dimSeason(season_id),
-    foreign key(manager_id) references dimManager(manager_id),
+    foreign key(home_manager_id) references dimManager(manager_id),
+    foreign key(away_manager_id) references dimManager(manager_id),
     foreign key(stadium_id) references dimStadium(stadium_id)
 );
