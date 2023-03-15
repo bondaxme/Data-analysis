@@ -48,9 +48,9 @@ select d.date_id,
 from matches m
          join main_warehouse.dimdate d
               on year(m.date_time) = d.year and month(m.date_time) = d.month and day(m.date_time) = d.day
-         join main_warehouse.dimteams t on m.home_team like t.team_name
-         join main_warehouse.dimteams t2 on m.away_team like t2.team_name
-         join main_warehouse.dimseason s on m.season like s.season
-         join main_warehouse.dimstadium st on m.stadium like st.name
-         join main_warehouse.dimmanager m1 on m.home_team like m1.team
-         join main_warehouse.dimmanager m2 on m.away_team like m2.team;
+         join main_warehouse.dimteams t on m.home_team = t.team_name
+         join main_warehouse.dimteams t2 on m.away_team = t2.team_name
+         join main_warehouse.dimseason s on m.season = s.season
+         join main_warehouse.dimstadium st on m.stadium = st.name
+         join main_warehouse.dimmanager m1 on m.home_team = m1.team
+         join main_warehouse.dimmanager m2 on m.away_team = m2.team;

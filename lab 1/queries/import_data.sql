@@ -1,5 +1,10 @@
 use stage;
 
+truncate table matches;
+truncate table stadiums;
+truncate table teams;
+truncate table managers;
+
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/matches.csv' INTO TABLE matches
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
