@@ -30,9 +30,12 @@ create table dimCity
 create table dimStadium
 (
     stadium_id int not null auto_increment,
+    source_id int default null,
     city_id int not null,
     name varchar(50),
     capacity varchar(50),
+    start_date     date default null,
+    end_date date default null,
     primary key (stadium_id),
     foreign key (city_id) references dimCity(city_id)
 );
