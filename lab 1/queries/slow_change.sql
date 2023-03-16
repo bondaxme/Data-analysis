@@ -8,9 +8,6 @@ begin
     declare old_id int default null;
     declare old_city_id int;
     declare old_capacity varchar(50);
-    declare new_id int;
-
-    select count(*) + 1 from dimstadium into new_id;
 
     select stadium_id, city_id, capacity
     into old_id, old_city_id, old_capacity
@@ -19,8 +16,8 @@ begin
     if old_id is null then
         signal sqlstate '45000' set message_text = 'The old name of the stadium does not exist';
     else
-        insert into dimstadium (stadium_id, source_id, city_id, name, capacity, start_date)
-            value (new_id, old_id, old_city_id, new_name, old_capacity, current_date);
+        insert into dimstadium (source_id, city_id, name, capacity, start_date)
+            value (old_id, old_city_id, new_name, old_capacity, current_date);
 
         update dimstadium
         set end_date = CURRENT_DATE

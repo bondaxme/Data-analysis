@@ -73,4 +73,3 @@ where not exists(select fm.date_id, fm.home_team_id, fm.away_team_id
                  where fm.date_id = d.date_id
                    and fm.home_team_id = t.team_id
                    and fm.away_team_id = t2.team_id);
-
