@@ -1,10 +1,10 @@
 drop
-database if exists stage;
+    database if exists stage;
 create
-database stage;
+    database stage;
 
 use
-stage;
+    stage;
 
 drop table if exists matches;
 drop table if exists stadiums;
@@ -27,11 +27,11 @@ create table matches
 
 create table stadiums
 (
-    id            int         not null,
-    name          varchar(50) not null,
-    city          varchar(50) not null,
-    country       varchar(50) not null,
-    capacity      int not null,
+    id       int         not null,
+    name     varchar(50) not null,
+    city     varchar(50) not null,
+    country  varchar(50) not null,
+    capacity int         not null,
     primary key (id)
 );
 
