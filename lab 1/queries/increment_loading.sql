@@ -12,7 +12,7 @@ where not exists(select year(m.date_time), month(m.date_time), day(m.date_time)
                  from dimdate dd
                  where dd.year = year(m.date_time)
                    and dd.month = month(m.date_time)
-                   and dd.day = day(date_time));
+                   and dd.day = day(m.date_time));
 
 insert into dimmanager (first_name, last_name, nationality, date_of_birth, team)
 select distinct first_name, last_name, nationality, date_of_birth, team
