@@ -24,12 +24,12 @@ from stadiums;
 insert into main_warehouse.dimcity(country_id, city)
 select distinct dc.country_id, city
 from stadiums
-         join main_warehouse.dimcountry dc on dc.country like stadiums.country;
+         join main_warehouse.dimcountry dc on dc.country = stadiums.country;
 
 insert into main_warehouse.dimstadium(city_id, name, capacity)
 select distinct city_id, name, capacity
 from stadiums
-         join main_warehouse.dimcity ds on ds.city like stadiums.city;
+         join main_warehouse.dimcity ds on ds.city = stadiums.city;
 
 insert into main_warehouse.factmatches(date_id, home_team_id, away_team_id, season_id, home_manager_id, away_manager_id,
                                        stadium_id,
