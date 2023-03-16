@@ -1,0 +1,79 @@
+id,first_name,last_name,nationality,date_of_birth,team
+1,Stefano,Pioli,Italy,10-19-1965,AC Milan
+2,Alfred,Schreuder,Netherlands,11-2-1972,AFC Ajax
+3,Gian Piero,Gasperini,Italy,1-26-1958,Atalanta
+4,Diego,Simeone,Argentina,4-28-1970,Atlético Madrid
+5,Julian,Nagelsmann,Germany,7-23-1987,Bayern München
+6,Valérien,Ismaël,France,9-28-1975,Be?ikta?
+7,Edin,Terzi?,Germany,10-30-1982,Borussia Dortmund
+8,Raphaël,Wicky,Switzerland,4-26-1977,BSC Young Boys
+9,Graham,Potter,England,5-20-1975,Chelsea FC
+10,Carl,Hoefkens,Belgium,10-6-1978,Club Brugge KV
+11,Mircea,Lucescu,Romania,7-29-1945,Dinamo Kiev
+12,,Xavi,Spain,1-25-1980,FC Barcelona
+13,Sérgio,Conceição,Portugal,11-15-1974,FC Porto
+14,Stjepan,Tomas,Croatia,6-3-1976,FC Sheriff
+15,Simone,Inzaghi,Italy,4-5-1976,Inter
+16,Massimiliano,Allegri,Italy,8-11-1967,Juventus
+17,Paulo,Fonseca,Portugal,3-5-1973,Lille OSC
+18,Jürgen,Klopp,Germany,6-16-1967,Liverpool FC
+19,Åge,Hareide,Norway,9-23-1953,Malmö FF
+20,Pep,Guardiola,Spain,1-18-1971,Manchester City
+21,Erik ten,Hag,Netherlands,2-2-1970,Manchester United
+22,Christophe,Galtier,France,8-26-1966,Paris Saint-Germain
+23,Marco,Rose,Germany,9-11-1976,RB Leipzig
+24,Matthias,Jaissle,Germany,4-5-1988,RB Salzburg
+25,Carlo,Ancelotti,Italy,6-10-1959,Real Madrid
+26,,Lopetegui,Spain,9-28-1966,Sevilla FC
+27,Igor,Jovi?evi?,Croatia,11-30-1973,Shakhtar Donetsk
+28,Roger,Schmidt,Germany,3-13-1967,SL Benfica
+29,Rúben,Amorim,Portugal,1-27-1985,Sporting CP
+30,Niko,Kova?,Croatia,10-15-1971,VfL Wolfsburg
+31,Unai,Emery,Spain,11-3-1971,Villarreal CF
+32,Sergey,Semak,Russia,2-27-1976,Zenit St. Petersburg
+33,Daniel,Farke,Germany,10-30-1976,Bor. Mönchengladbach
+34,Albert,Capellas,Spain,10-1-1967,FC Midtjylland
+35,Stanislav,Cherchesov,Russia,9-2-1963,Ferencvárosi TC
+36,Aleksandr,Storozhuk,Russia,8-10-1981,FK Krasnodar
+37,Emre,Belözo?lu,Turkey,9-7-1980,?stanbul Ba?ak?ehir
+38,Maurizio,Sarri,Italy,1-10-1959,Lazio Roma
+39,Joe,Zinnbauer,Germany,5-1-1970,Lokomotiv Moskva
+40,Carlos,Corberán,Spain,4-7-1983,Olympiakos Piraeus
+41,,Míchel,Spain,3-23-1963,Olympiakos Piraeus
+42,Igor,Tudor,Croatia,4-16-1978,Olympique Marseille
+43,Bruno,Génésio,France,9-1-1966,Stade Rennes
+44,Xabi,Alonso,Spain,11-25-1981,Bayer Leverkusen
+45,Miloš,Milojevi?,Serbia,9-29-1982,Crvena Zvezda
+46,Ante,?a?i?,Croatia,9-29-1953,Dinamo Zagreb
+47,Okan,Buruk,Turkey,10-19-1973,Galatasaray
+48,Wouter,Vrancken,Belgium,2-3-1979,KRC Genk
+49,Peter,Bosz,Netherlands,11-21-1963,Olympique Lyon
+50,Luciano,Spalletti,Italy,3-7-1959,SSC Napoli
+51,Antonio,Conte,Italy,7-31-1969,Tottenham Hotspur
+52,Gennaro,Gattuso,Italy,1-9-1978,Valencia CF
+53,André,Breitenreiter,Germany,10-2-1973,1899 Hoffenheim
+54,Matías,Almeyda,Argentina,12-21-1973,AEK Athen
+55,Philippe,Clement,Belgium,3-22-1974,AS Monaco
+56,José,Mourinho,Portugal,1-26-1963,AS Roma
+57,Vladimir,Fedotov,Russia,8-12-1966,CSKA Moskva
+58,Frank,Kramer,Germany,5-3-1972,FC Schalke 04
+59,Ruud van,Nistelrooy,Netherlands,7-1-1976,PSV Eindhoven
+60,Sofronis,Avgousti,Cyprus,3-9-1977,APOEL Nikosia
+61,Ange,Postecoglou,Australia,8-27-1965,Celtic FC
+62,Alexander,Frei,Switzerland,7-15-1979,FC Basel
+63,Arne,Slot,Netherlands,9-17-1978,Feyenoord
+64,Damir,Krznar,Croatia,7-10-1972,NK Maribor
+65,Qurban,Qurbanov,Azerbaijan,4-13-1972,Qaraba? FK
+66,Felice,Mazzù,Belgium,3-12-1966,RSC Anderlecht
+67,Guillermo,Abascal,Spain,4-13-1989,Spartak Moskva
+68,Fernando,Torres,Spain,3-20-1984,
+69,Dmitriy,Kombarov,Russia,1-22-1987,
+70,Sandro,Wagner,Germany,11-29-1987,
+71,Stephan,Lichtsteiner,Switzerland,1-16-1984,
+72,Mikel,Arteta,Spain,3-26-1982,Arsenal FC
+73,Jacob,Neestrup,Denmark,3-8-1988,FC København
+74,Valeriy,Karpin,Russia,2-2-1969,FK Rostov
+75,Kosta,Runjaic,Germany,6-4-1971,Legia Warszawa
+76,Brendan,Rodgers,Northern Ireland,1-26-1973,Leicester City
+77,Ante,Šimundža,Slovenia,9-28-1971,PFC Ludogorets Razgrad
+78,Nuri,?ahin,Turkey,9-5-1988,
