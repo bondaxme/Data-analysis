@@ -40,24 +40,6 @@ create table dimStadium
     foreign key (city_id) references dimCity (city_id)
 );
 
-create table dimManager
-(
-    manager_id    int not null auto_increment,
-    first_name    varchar(50),
-    last_name     varchar(50),
-    nationality   varchar(40),
-    date_of_birth date,
-    team          varchar(40),
-    primary key (manager_id)
-);
-
-create table dimSeason
-(
-    season_id int not null auto_increment,
-    season    varchar(9),
-    primary key (season_id)
-);
-
 create table dimDate
 (
     date_id int not null auto_increment,
@@ -67,13 +49,33 @@ create table dimDate
     primary key (date_id)
 );
 
+create table dimManager
+(
+    manager_id  int not null auto_increment,
+    date_id     int not null,
+    first_name  varchar(50),
+    last_name   varchar(50),
+    nationality varchar(40),
+    team        varchar(40),
+    primary key (manager_id),
+    foreign key (date_id) references dimDate (date_id)
+);
+
+create table dimSeason
+(
+    season_id int not null auto_increment,
+    season    varchar(9),
+    primary key (season_id)
+);
+
 create table dimTeams
 (
     team_id      int not null,
+    country_id   int not null,
     team_name    varchar(50),
-    country      varchar(40),
     home_stadium varchar(40),
-    primary key (team_id)
+    primary key (team_id),
+    foreign key (country_id) references dimcountry (country_id)
 );
 
 create table factMatches

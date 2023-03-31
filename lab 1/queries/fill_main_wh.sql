@@ -1,22 +1,5 @@
 use stage;
 
-
-insert into main_warehouse.dimteams(team_id, team_name, country, home_stadium)
-select distinct id, team_name, country, home_stadium
-from teams;
-
-insert into main_warehouse.dimseason(season)
-select distinct season
-from matches;
-
-insert into main_warehouse.dimdate(year, month, day)
-select distinct year(date_time), month(date_time), day(date_time)
-from matches;
-
-insert into main_warehouse.dimmanager(first_name, last_name, nationality, date_of_birth, team)
-select distinct first_name, last_name, nationality, date_of_birth, team
-from managers;
-
 insert into main_warehouse.dimcountry(country)
 select distinct country
 from stadiums;
@@ -30,6 +13,30 @@ insert into main_warehouse.dimstadium(city_id, name, capacity)
 select distinct city_id, name, capacity
 from stadiums
          join main_warehouse.dimcity ds on ds.city = stadiums.city;
+
+insert into main_warehouse.dimteams(country_id, team_id, team_name, home_stadium)
+select distinct country_id, id, team_name, home_stadium
+from teams
+join main_warehouse.dimcountry dc on teams.country = dc.country;
+
+insert into main_warehouse.dimseason(season)
+select distinct season
+from matches;
+
+insert into main_warehouse.dimdate(year, month, day)
+select distinct year(date_time), month(date_time), day(date_time)
+from matches
+union
+select distinct year(date_of_birth), month(date_of_birth), day(date_of_birth)
+from managers;
+
+insert into main_warehouse.dimmanager(date_id, first_name, last_name, nationality, team)
+select distinct date_id, first_name, last_name, nationality, team
+from managers m
+         join main_warehouse.dimdate dd
+              on year(m.date_of_birth) = dd.year and month(m.date_of_birth) = dd.month and
+                 day(date_of_birth) = dd.day;
+
 
 insert into main_warehouse.factmatches(date_id, home_team_id, away_team_id, season_id, home_manager_id, away_manager_id,
                                        stadium_id,
